@@ -1,0 +1,182 @@
+.Full{
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.phone1{
+    width: 100vw;
+    height: 30px;
+
+}
+
+.sale1{
+  width: 100vw;
+  height: 300px;
+
+}
+
+.smart1{
+  width: 100vw;
+  height: 100px;
+
+}
+
+
+.sale1 img{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.phones{
+    width: 100vw;
+    height: 1300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    flex-direction: row;  /* Stack image and text vertically */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.sale2{
+  width: 100vw;
+  height: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  flex-direction: row;  /* Stack image and text vertically */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.smart2{
+  width: 100vw;
+  height: 1400px;
+  margin-top: -70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  flex-direction: row;  /* Stack image and text vertically */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  
+}
+.phone-card {
+    display: flex;
+    flex-direction: column;  /* Stack image and text vertically */
+    width: 10vw;
+    height: 350px;
+    background-color: #fffafa;
+    padding: 65px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  
+  .phone-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: -50px;
+  }
+  
+  .phone-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .phone-price {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .og-price {
+    font-size: 16px;
+    color: #333;
+    text-decoration: line-through;
+    margin-bottom: -10px;
+  }
+  .sale-price {
+    font-size: 16px;
+    color: rgb(243, 56, 56);
+  }
+
+  .Addbutton {
+    background-color: white;
+    color: rgb(69, 67, 67);
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0%;
+    width: 180px;
+    margin-top: -5px;
+    align-self: center;
+}
+  
+.Addbutton:hover {
+    background-color: rgb(243, 56, 56);
+    color:white;
+    border: 1px solid white;
+}
+
+/* Sort Dropdown */
+.sort-container {
+    display: flex;
+    align-items: center;
+    margin: 30px 70px;
+  }
+  
+  .sort-container select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid  #333;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+  }
+  
+  .sort-container option {
+   color:  #333;
+   background-color: white;
+  }
+  
+
+  .sale-card {
+    display: flex;
+    flex-direction: column;  /* Stack image and text vertically */
+    width: 12vw;
+    height: 390px;
+    background-color: #fffafa;
+    padding: 70px;
+    padding-top: 80px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  
+  .sale-image {
+    width: 170%;
+    align-self: center;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: -50px;
+  }

@@ -1,0 +1,70 @@
+.Full{
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+}
+.Loginbox{
+    width:100vw;
+    height:800px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+   
+    
+}
+
+
+
+
+.Loginform{
+    width:350px;
+    height:480px;
+    margin-left: 550px;
+    padding-top: 120px;
+    background-color: rgb(243, 56, 56);
+    border: 1px solid black;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+
+.Loginform input{
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  width:230px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.loginbtn{
+    font-size: 15px;
+    background-color: white;
+    color: rgb(69, 67, 67);
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+  
+.loginbtn:hover {
+    background-color: rgb(243, 56, 56);
+    color:white;
+    border: 1px solid white;
+}
+
+.loginlink{
+    font-size: 15px;
+    color: white;
+    margin-left: 120px;
+    text-align: center;
+}
+
+.loginlink:hover{
+    color:black;
+}

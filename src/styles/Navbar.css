@@ -1,0 +1,102 @@
+.Center{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(243, 56, 56);
+    position: relative;
+ 
+}
+
+.LeftN{
+    float: left;
+    width:70%;
+    height:inherit;
+    display: flex;
+    justify-content: "center";
+    align-items: "center";
+    line-height: 50px;   
+}
+
+
+.RightN{
+    float: Right;
+    width:30%;
+    height:inherit;
+    justify-content:end; 
+    display: flex;
+     
+}
+
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    margin-right: 20px;
+    background: white;
+    color: black;
+    width: 130px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .user-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .signout-btn {
+    width: 80%;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .signout-btn:hover {
+    background: darkred;
+  }
+
+.dropdown-menu {
+  width: 100vw;
+  display: flex;    /* Makes items appear in a row */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: row;  /* Ensures row layout */
+  padding: 10px;
+  border-radius: 5px;
+  gap: 40px; /* Adds spacing between items */
+  z-index: 500;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: column;  /* Stack image and text vertically */
+  align-items: center;
+  margin: 5px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin-left: 70px;
+}
+
+.dropdown-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+
+

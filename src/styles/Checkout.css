@@ -1,0 +1,138 @@
+
+.Full{
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.checkout-container {
+    width: 100vw;
+    height: 1000px;
+    margin-top: -20px;
+    display: flex;
+}
+
+.CCard {
+    background-color: #f8f8f8 ;
+    border-radius: 15px;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.CCard h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #666;
+}
+
+.CCard h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align:left;
+    color: #666;
+    margin-left: 200px;
+}
+
+.CCard label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.CCard input {
+    margin-left: 200px;
+    border: 1px solid black;
+    color: #666;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    width:400px;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.Card2 {
+    margin-left: 200px;
+    border: 1px solid black;
+    color: #666;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    width:100px;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.row .inputGroup {
+    flex: 1;
+}
+
+.payButton{
+    font-size: 15px;
+    background-color: rgb(243, 56, 56);
+    border: 1px solid white;
+    color:white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 350px;
+}
+  
+.payButton:hover {
+    color: rgb(69, 67, 67);
+    background-color: white;
+    border: 1px solid black;
+  
+}
+
+.secureText {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.dropdowncontainer {
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+  
+.dropdown2 {
+    width: 170%;
+    background-color: #f8f8f8;
+    color: #666;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 630px;
+   
+   
+  }
+  
+  .selected-city {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2E86C1;
+  }

@@ -1,0 +1,25 @@
+.Header{
+    display: flex;
+    margin: 0;  
+    width: 100vw;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    
+}
+@keyframes slideRight {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(500%);
+    }
+}
+  
+.moving-text {
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;   /* Prevents text from breaking into multiple lines */
+    animation: slideRight 10s linear infinite;
+}
+  

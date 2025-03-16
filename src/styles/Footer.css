@@ -1,0 +1,129 @@
+.TopFoot{
+    width: 100vw;
+    height: 150px;
+    position: relative;
+    background-color: rgb(243, 56, 56);
+    margin-bottom: 0.5px; /* White margin below */
+}
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+  
+.newsletter-input {
+    flex-grow: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+  
+.newsletter-input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+  
+.newsletter-button {
+    background-color: white;
+    color: rgb(47, 45, 45);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0%;
+    width: 150px;
+}
+  
+.newsletter-button:hover {
+    background-color: #f1f1f1;
+}
+
+
+.Foot{
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(243, 56, 56);
+    position: relative;
+
+}
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+ul li {
+    display: block; /* Ensures each item appears on a new line */
+    margin: 8px 0; /* Adds spacing between items */
+    position: relative; /* Required for the underline effect */
+}
+
+ul li a {
+    color: white;
+    text-decoration: none; /* Removes default underline */
+    transition: all 0.3s ease-in-out; /* Smooth effect */
+    position: relative; /* Needed for absolute positioning of the underline */
+    padding-bottom: 2px; /* Ensures spacing between text and underline */
+}
+
+ul li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px; /* Adjust thickness */
+    background: white; /* Underline color */
+    position: absolute;
+    bottom: 0; /* Adjust position */
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Smooth width expansion */
+}
+
+ul li a:hover::after {
+    width: 100%; /* Expands underline on hover */
+}
+
+.LeftF{
+    float: left;
+    width:30%;
+    height:inherit;
+    margin-left: 100px;
+}
+
+.MiddleF{
+    float: left;
+    width:30%;
+    height:inherit;
+    
+}
+
+.RightF{
+    float: Right;
+    width:30%;
+    height:inherit;    
+    
+    align-items: center;
+}
+
+.LastF{
+    display: flex;
+    margin: 0;  
+    width: 100vw;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.Foot h1{
+    font-size: 20px;
+    color: 'white';
+}

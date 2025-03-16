@@ -1,0 +1,60 @@
+.mid1{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    background-color: white;
+}
+
+.mid1 h1{
+    font-size: 30px;
+    color: rgb(65, 65, 65);
+    margin-left: 100px;
+    margin-bottom: 150px;
+    text-wrap: nowrap;
+}
+
+.VideoC {
+    position: relative;
+    display: flex;
+    width: 1300px;
+    margin-left: -220px;
+    max-height: 500px; 
+    margin-top: 60px;
+   
+}
+
+.VideoC video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the div */
+    transform: translate(-50%, -50%);
+ 
+}
+
+.Buybutton {
+    position: absolute;
+    background-color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(69, 67, 67);
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    align-self: center;
+    transition: 0.3s ease-in-out;
+}
+  
+.Buybutton:hover {
+    background-color: rgb(243, 56, 56);
+    color:white;
+    border: 1px solid white;
+}

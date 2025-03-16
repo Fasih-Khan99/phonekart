@@ -1,0 +1,96 @@
+.Full{
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+}
+.Faq{
+    width: 100vw;
+    height: 600px;
+    background-color: white;
+    
+}
+.return{
+    width: 100vw;
+    height: 800px;
+    background-color: white;
+    
+}
+.ship{
+    width: 100vw;
+    height: 1650px;
+    background-color: white;
+    
+}
+.privacy{
+    width: 100vw;
+    height: 2250px;
+    background-color: white;
+    
+}
+
+.terms{
+    width: 100vw;
+    height: 1700px;
+    background-color: white;
+    
+}
+
+.contact{
+    width: 100vw;
+    height: 800px;
+    background-color: white;
+
+}
+
+.LeftC{
+    width:60%;
+    height: inherit;
+    background-color: white;
+    float: left;
+}
+
+.RightC{
+    width:40%;
+    height: inherit;
+    background-color:white;
+    float: right;
+}
+
+
+.ContactForm{
+    flex: 1;
+  max-width: 60%;
+  border: 0.5px solid black;
+  height: 580px;
+  margin-left: 100px;
+
+}
+
+.ContactForm input{
+    font-size: 15;
+    color: black;
+    background-color: white;
+    width:300px;
+    height:25px;
+    margin-left: 50px;
+}
+
+.ContactForm textarea{
+    font-size: 15;
+    color: black;
+    background-color: white;
+    width:400px;
+    height:200px;
+    margin-left: 50px;
+}
+
+.ContactForm button{
+    width:200px;
+    height:40px;
+    background-color: rgb(243, 56, 56);
+    color: white;
+    font-size: 15;
+    margin-left: 150px;
+    border:1 px solid black
+}
+

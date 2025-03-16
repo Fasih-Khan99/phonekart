@@ -1,0 +1,46 @@
+.Full{
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+  }
+.Owners{
+    width: 100vw;
+    height: 300px;
+    background-color: white;
+    align-content: space-between;
+}
+.card1{
+    width:250px;
+    height:260px;
+    border: 1px solid black;
+    background-color: white;
+    float: left;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.card2{
+    width:250px;
+    height:260px;
+    border: 1px solid black;
+    background-color: white;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.card3{
+    width:250px;
+    height:260px;
+    border: 1px solid black;
+    background-color: white;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.About1{
+    width: 100vw;
+    height: 550px;
+    background-color: white;
+    
+}
+
