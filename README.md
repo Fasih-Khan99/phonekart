@@ -1,6 +1,6 @@
 # PhoneKart 📱 – A Modern E-Commerce Web App  
 
-PhoneKart is a sleek and responsive e-commerce platform for buying smartphones and accessories. Built with **React.js**, it offers a smooth shopping experience with a clean UI, fast performance, and mobile-friendly design. 🚀💻📱  
+PhoneKart is a sleek and responsive e-commerce platform for buying smartphones and accessories. Built with **React.js**, it offers a smooth shopping experience with a clean UI, fast performance, and mobile-friendly design.  
 
 ## 🔹 Tech Stack  
 - React.js  
