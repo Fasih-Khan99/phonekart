@@ -9,10 +9,9 @@ PhoneKart is a sleek and responsive e-commerce platform for buying smartphones a
 
 ## 🔹 Features  
 - User authentication
-- Search for weather by city name
-- Displays temperature, humidity, and weather conditions
-- Error handling for invalid city searches
-- Mobile-friendly design
+- Product listings  
+- Cart management  
+
 
 **Live Demo:** [PhoneKart](https://phonekartpk.netlify.app/)  
 
