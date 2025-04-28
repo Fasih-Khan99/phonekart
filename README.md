@@ -8,9 +8,11 @@ PhoneKart is a sleek and responsive e-commerce platform for buying smartphones a
 - Netlify  
 
 ## 🔹 Features  
-- User authentication  
-- Product listings  
-- Cart management  
+- User authentication
+- Search for weather by city name
+- Displays temperature, humidity, and weather conditions
+- Error handling for invalid city searches
+- Mobile-friendly design
 
 **Live Demo:** [PhoneKart](https://phonekartpk.netlify.app/)  
 
