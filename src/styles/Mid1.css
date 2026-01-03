@@ -58,3 +58,50 @@
     color:white;
     border: 1px solid white;
 }
+
+@media (max-width: 768px) {
+
+.mid1 {
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; 
+    justify-content: center;
+}
+
+  
+.mid1 h1{
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.VideoC {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin-left: 0px;
+    min-height: 200px; 
+    margin-top: 0px;
+      padding: 10px 20px;
+   
+}
+
+.Buybutton {
+    top: 90%;
+    padding: 0px 10px;
+    width: 80px;
+    height: 20px;
+    margin-top: 0px;
+    align-self: center;
+    transition: 0.3s ease-in-out;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+}

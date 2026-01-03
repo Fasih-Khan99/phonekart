@@ -44,3 +44,63 @@
     
 }
 
+/* =========================
+   MOBILE VIEW (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* ---------- Page Wrapper ---------- */
+  .Full {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* ---------- Owners Section ---------- */
+  .Owners {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    float: none;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .Owners img {
+    margin-left: 0 !important;
+  }
+
+  /* ---------- About Section ---------- */
+  .About1 {
+    height: auto;
+
+  }
+
+  .About1 h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .info{
+    padding: 20px 20px;
+  }
+
+  .About1 p {
+    margin: 0 !important;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+

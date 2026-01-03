@@ -3,6 +3,13 @@ import '../styles/Footer.css';  // Use two dots (..) to go up one level
 import {ToastContainer, toast} from "react-toastify";   //temporary notification message
 import { useEffect, useState } from "react";
 import { auth } from "../firebase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faYoutube
+} from "@fortawesome/free-brands-svg-icons";
+
 
 
 function Footer() {
@@ -21,10 +28,11 @@ function Footer() {
     ];
 
     const follows = [
-        { name: 'Facebook', link: 'https://www.facebook.com' },
-        { name: 'Instagram', link: 'https://www.instagram.com' },
-        { name: 'YouTube', link: 'https://www.youtube.com' }
+        { icon: faFacebookF, link: "https://www.facebook.com" },
+        { icon: faInstagram, link: "https://www.instagram.com" },
+        { icon: faYoutube, link: "https://www.youtube.com" }
     ];
+
 
 
     const [user, setUser] = useState(null);
@@ -110,7 +118,7 @@ function Footer() {
 
                 <div className="RightF">
                     <h1 style={{ fontSize: 20, color: 'white', textAlign:"left" }}>FOLLOW US ON</h1>
-                    <ul>
+                    {/* <ul>
                         {follows.map((item, index) => (
                             <li key={index}>
                                 <a href={item.link} style={{ color: 'white', textDecoration: 'none' }}>
@@ -118,12 +126,26 @@ function Footer() {
                                 </a>
                             </li>
                         ))}
+                    </ul> */}
+                    <ul className="social-icons">
+                        {follows.map((item, index) => (
+                            <li key={index}>
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FontAwesomeIcon icon={item.icon} />
+                            </a>
+                            </li>
+                        ))}
                     </ul>
+
                 </div>
             </div>
 
         <div className="LastF">
-           <text style={{fontSize:18, color:'white', marginLeft:"35%"}}>&copy; {new Date().getFullYear()} PHONEKART, All Rights Reserved</text>
+           <text className='copyright'>&copy; {new Date().getFullYear()} PHONEKART, All Rights Reserved</text>
         </div>
 
             

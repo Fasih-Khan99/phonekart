@@ -94,3 +94,156 @@
     border:1 px solid black
 }
 
+
+/* =========================
+   MOBILE VIEW (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* ---------- Page Wrapper ---------- */
+  .Full {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* ---------- Contact Section ---------- */
+  .contact {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .contact h1 {
+    margin-left: 15px !important;
+    font-size: 22px;
+  }
+
+  /* ---------- Layout Stack ---------- */
+  .LeftC,
+  .RightC {
+    float: none;
+    width: 90%;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  /* ---------- Intro Text ---------- */
+  .LeftC h1 {
+    margin: 20px 0 10px 0 !important;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  /* ---------- Contact Form ---------- */
+  .ContactForm {
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+
+  .ContactForm label {
+    margin-left: 0 !important;
+    font-size: 14px;
+  }
+
+  .ContactForm input,
+  .ContactForm textarea {
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .ContactForm textarea {
+    height: 150px;
+  }
+
+  .ContactForm button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  /* ---------- Store Info ---------- */
+  .RightC h1 {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .RightC p {
+    margin-left: 0 !important;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  hr {
+    margin: 15px 0;
+  }
+
+    .Faq{
+        width: 100%;
+        height: 600px;
+        background-color: white;
+    
+    }
+
+    .faq{
+        padding: 0px 15px;
+    }
+
+    .faq p, h1{
+        margin-left: 10px !important;
+    }
+
+    .ship{
+        width: 90%;
+        padding: 0px 10px;
+        height: 2450px;
+    
+    }
+
+    .ship p, h1{
+        margin-left: 10px !important;
+    }
+
+    .return{
+        width: 90%;
+        padding: 0px 10px;
+        height: 1000px;
+    
+    }
+
+    .return p, h1{
+        margin-left: 10px !important;
+    }
+
+    .privacy{
+        width: 90%;
+        padding: 0px 10px;
+        height: 4500px;
+    
+    }
+
+    .privacy p, h1{
+        margin-left: 10px !important;
+    }
+
+    .terms{
+        width: 90%;
+        padding: 0px 10px;
+        height: 4000px;
+    
+    }
+
+    .terms p, h1{
+        margin-left: 10px !important;
+    }
+
+
+
+    
+}
+

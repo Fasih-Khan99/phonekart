@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import '../styles/Navbar.css'   // Use two dots (..) to go up one level
 import searchicon from '../assets/search.png'
 import loginicon from '../assets/loginuser.png'
@@ -20,6 +20,13 @@ function Navbar(){
     const [smartphoneDropdown, setSmartphoneDropdown] = useState(false);
     const [user, setUser] = useState(null); // Track logged-in user
     const navigate = useNavigate();
+    const searchRef = useRef(null);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [showPhonesMenu, setShowPhonesMenu] = useState(false);
+
+
+
 
 
     // Listen for authentication state changes
@@ -29,7 +36,35 @@ function Navbar(){
     });
 
     return () => unsubscribe(); // Cleanup on unmount
+    
     }, []);
+
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (searchRef.current && !searchRef.current.contains(event.target)) {
+          setShowSearch(false);
+        }
+      }
+
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    useEffect(() => {
+      const handleResize = () => {
+        const mobile = window.innerWidth <= 768;
+        setIsMobile(mobile);
+
+        if (!mobile) {
+          setMobileMenuOpen(false);
+        }
+      };
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
 
 
     const handleSignOut = async () => {
@@ -44,14 +79,25 @@ function Navbar(){
   
     return(
         <div className="Center">
-            <div className="LeftN">
-            <img src={phonekart} style={{ width: "150px", height: "40px", marginLeft:"30px", marginTop:"10px", filter: "drop-shadow(2px 2px 2px black)"}} alt="PK Icon"></img>
-            <Link to="/" style={{color:'white', fontSize:15, marginLeft:50}}>Home</Link>
-            <Link to="/sale" style={{color:'white', fontSize:15, marginLeft:50}}>SALE</Link>
+          <div
+            className="hamburger"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div className="LeftN">
+            <div className="logo-container">
+              <img src={phonekart} className="logo" alt="PK Icon"></img>
+            </div>
+            <Link to="/" className="nav-link">HOME</Link>
+            <Link to="/sale" className="nav-link">SALE</Link>
 
            
-            <Link style={{color:'white', fontSize:15, marginLeft:50}}
-             onClick={() => {setSmartphoneDropdown(!smartphoneDropdown);}}>Smart Phones</Link>
+            <Link className="nav-link"
+             onClick={() => {setSmartphoneDropdown(!smartphoneDropdown);}}>SMART PHONES</Link>
             
             {smartphoneDropdown && (
               <div className="dropdown-menu">
@@ -83,23 +129,18 @@ function Navbar(){
             )}
        
 
-            <Link to="/smartTV" style={{color:'white', fontSize:15, marginLeft:50}}>Smart TV</Link>
+            <Link to="/smartTV" className="nav-link">SMART TV</Link>
             </div>
             
-            <div className="RightN">
+            <div className="RightN" ref={searchRef}>
                 <Link onClick={() => setShowSearch(!showSearch)}>
                 <img src={searchicon} className="Navimage" style={{width:"25px", height:"25px", margin:"10px"}} alt="Search Icon"></img></Link>
                  {/* Search Box (Only Visible When showSearch is true) */}
                 {showSearch && (
-                    <input
+                    <input className="search-input"
                         type="text"
                         placeholder="Search..."
-                        style={{
-                        padding: "5px",
-                        border: "1px solid gray",
-                        borderRadius: "5px",
-                        width:'40%'
-                      }}
+                        autoFocus
                     />
                 )}
                 <img src={loginicon} style={{width:"25px", height:"25px", margin:"10px"}} alt="Login Icon" 
@@ -120,6 +161,44 @@ function Navbar(){
                 )}
                 <Link to="/addToCart"><img src={carticon} style={{width:"25px", height:"25px", margin:"10px", marginRight:"30px"}} alt="Cart Icon"></img></Link>
             </div>
+
+            {isMobile && (
+              <div className={`mobile-sidebar ${mobileMenuOpen ? "open" : ""}`}>
+                <span className="close-btn" onClick={() => {
+                    setMobileMenuOpen(false);
+                    setShowPhonesMenu(false);
+                }}>
+                  ✕
+                </span>
+
+                <Link to="/" onClick={() => setMobileMenuOpen(false)}>HOME</Link>
+                <Link to="/sale" onClick={() => setMobileMenuOpen(false)}>SALE</Link>
+
+                 {/* SMART PHONES TOGGLE */}
+                <div
+                  className="mobile-menu-item"
+                  onClick={() => setShowPhonesMenu(!showPhonesMenu)}
+                >
+                  SMART PHONES
+                  <span className="arrow">{showPhonesMenu ? "▲" : "▼"}</span>
+                </div>
+
+                {/* PHONE LIST */}
+                {showPhonesMenu && (
+                  <div className="mobile-submenu">
+                    <Link to="/iphone" onClick={() => setMobileMenuOpen(false)}>iPhone</Link>
+                    <Link to="/samsung" onClick={() => setMobileMenuOpen(false)}>Samsung</Link>
+                    <Link to="/xiaomi" onClick={() => setMobileMenuOpen(false)}>Xiaomi</Link>
+                    <Link to="/oppo" onClick={() => setMobileMenuOpen(false)}>Oppo</Link>
+                    <Link to="/tecno" onClick={() => setMobileMenuOpen(false)}>Tecno</Link>
+                    <Link to="/realme" onClick={() => setMobileMenuOpen(false)}>RealMe</Link>
+                  </div>
+                )}
+                {/* <Link to="/iphone" onClick={() => setMobileMenuOpen(false)}>SMART PHONES</Link> */}
+                <Link to="/smartTV" onClick={() => setMobileMenuOpen(false)}>SMART TV</Link>
+              </div>
+            )}
+
         </div>
         
     );

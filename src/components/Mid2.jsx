@@ -123,12 +123,14 @@ function Mid2(){
                   <div className='Mid23'>
                   {sortedProducts.map((product) => (
                     <div key={product.id} className="Mid2-card">
-                      <img src={product.image} alt={product.name} className="Mid2-image" />
+                      <div className='Mid2-img-container'>
+                        <img src={product.image} alt={product.name} className="Mid2-image" />
+                      </div>
                       <p className="phone-name">{product.name}</p>
                       <p className="phone-name">{product.color}</p>
                       <p className="og-price"><strong>Rs: {product.ogprice.toLocaleString()}</strong></p>
                       <p className="sale-price"><strong>Rs: {product.price.toLocaleString()}</strong></p>
-                      <button className="Addbutton" onClick={() => handleAddToCart(product)}>ADD TO CART</button>
+                      <button className="addbutton" onClick={() => handleAddToCart(product)}>ADD TO CART</button>
                     </div>
                   ))}
             

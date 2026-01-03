@@ -2,14 +2,13 @@
     display: flex;
     margin: 0;  
     width: 100vw;
-    height: 40px;
     background-color: black;
     text-align: center;
-    
+    justify-content: center;    
 }
 @keyframes slideRight {
     0% {
-      transform: translateX(-150%);
+      transform: translateX(-400%);
     }
     100% {
       transform: translateX(500%);
@@ -22,4 +21,28 @@
     white-space: nowrap;   /* Prevents text from breaking into multiple lines */
     animation: slideRight 10s linear infinite;
 }
+
+@media (max-width: 768px) {
+
+  .Header {
+    width: 100%;
+    padding: 8px 0;
+    overflow: hidden; /* prevents horizontal scroll */
+  }
+
+  .moving-text {
+    font-size: 14px; /* smaller text for mobile */
+    animation-duration: 10s; /* slightly faster for smaller screens */
+  }
+/* 
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  } */
+}
+
   

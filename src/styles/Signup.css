@@ -76,3 +76,79 @@
 .Signuplink2:hover{
     color:black;
 }
+
+
+/* =========================
+   MOBILE VIEW (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* ---------- Page Wrapper ---------- */
+  .Full {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* ---------- Background Section ---------- */
+  .Signupbox {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+
+  /* ---------- Signup Form ---------- */
+  .Signupform {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 90px 30px;
+    border-radius: 12px;
+  }
+
+  /* ---------- Heading ---------- */
+  .Signupform h1 {
+    font-size: 20px !important;
+    margin-top: -60px !important;
+    margin-bottom: 70px !important;
+  }
+
+  /* ---------- Inputs ---------- */
+  .Signupform input {
+    width: calc(100% - 70px);
+    height: 25px;
+    font-size: 14px;
+  }
+
+  /* ---------- Button ---------- */
+  .Signupbtn {
+    width: 100%;
+    margin-left: 0;
+    height: 45px;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  /* ---------- Links ---------- */
+  .Signuplink,
+  .Signuplink2 {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  /* ---------- Icons ---------- */
+  .Signupform img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Center profile icon */
+  .Signupform img:first-of-type {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+  }
+}

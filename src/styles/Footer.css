@@ -108,7 +108,6 @@ ul li a:hover::after {
     float: Right;
     width:30%;
     height:inherit;    
-    
     align-items: center;
 }
 
@@ -120,10 +119,113 @@ ul li a:hover::after {
     background-color: black;
     text-align: center;
     align-items: center;
-    
+    justify-content: center;
 }
+
+.copyright{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-icons li a {
+  color: white;
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
 
 .Foot h1{
     font-size: 20px;
     color: 'white';
+}
+
+/* =========================
+   MOBILE VIEW (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* ---------- Newsletter Section ---------- */
+  .TopFoot {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 90%;
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+  }
+
+  .newsletter-input {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .newsletter-button {
+    padding: 12px;
+  }
+
+  /* ---------- Footer Main ---------- */
+  .Foot {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px 20px;
+    text-align: left;
+  }
+
+  .LeftF,
+  .MiddleF,
+  .RightF {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    float: none;
+  }
+
+  .Foot h1 {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  ul li {
+    margin: 6px 0;
+  }
+
+  /* ---------- Social Icons ---------- */
+  .social-icons {
+    justify-content: left;
+    margin-top: 10px;
+  }
+
+  .social-icons li a {
+    font-size: 24px;
+  }
+
+  /* ---------- Bottom Bar ---------- */
+  .LastF {
+    height: auto;
+    padding: 10px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }

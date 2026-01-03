@@ -2,9 +2,9 @@ import '../styles/AboutUs.css'   // Use two dots (..) if file is in another fold
 import Header from '../components/Header.jsx'    //importing Header component
 import Navbar from '../components/Navbar.jsx'    //importing Navbar component
 import Footer from '../components/Footer.jsx'    //importing Footer component
-import habib from '../assets/habib.png'
+import karan from '../assets/karan.png'
 import khurram from '../assets/khurram.jpg'
-import faris from '../assets/faris.png'
+import afk4 from '../assets/afk4.png'
 
 function AboutUs() {
   return (
@@ -15,24 +15,25 @@ function AboutUs() {
         <div className='card1'>
           <img src={khurram} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="khurram shahzad"></img>
           <h1 style={{fontSize:18, color:"black", textAlign:"center"}}>MR. KHURRAM SHAHZAD</h1>
-          <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CEO HABIB METRO GROUP</h2>
+          <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CFO TECHNOVA PVT LTD</h2>
         </div>
         <div className='card2'>
-          <img src={habib} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="arif habib"></img> 
-          <h1 style={{fontSize:18, color:"black", textAlign:"center"}}>MR. ARIF HABIB</h1>
-          <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CEO ARIF HABIB GROUP</h2>
+          <img src={karan} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="arif habib"></img> 
+          <h1 style={{fontSize:18, color:"black", textAlign:"center"}}>MR. KARAN KABIR</h1>
+          <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CEO TECHNOVA PVT LTD</h2>
         </div>
         <div className='card3'>
-          <img src={faris} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="faris kazmi"></img>
-          <h1 style={{fontSize:18, color:"black", textAlign:"center"}}>MR. FARIS KAZMI</h1>
+          <img src={afk4} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="faris kazmi"></img>
+          <h1 style={{fontSize:18, color:"black", textAlign:"center"}}>MR. FASIH KHAN</h1>
           <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CEO TEAM AFK</h2>
         </div>
       </div>
       <div className='About1'>
           <h1 style={{fontSize:25, color: "black"}}>ABOUT US</h1>
+          <div className='info'>
           <p style={{fontSize:15, color: "rgb(113, 121, 126)", textAlign:"justify", margin:250, marginTop:0}}>
             Founded in 2024 as most reliable online shopping place, 
-            Phonekart Owned by Habib Metro Group,
+            Phonekart Owned by TechNova Pvt Ltd,
             is one of the first brand in Pakistan to deliver authenticity and sell smart devices at great value. 
             Today, we offer collections that are wide-ranging and varied for all ages. 
             Our brand offers an eclectic mix of smart devices, that are with the latest 
@@ -59,6 +60,8 @@ function AboutUs() {
 
             Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. 
             You can also shop for your friends, family and loved-ones and avail our gift services for special occasions.</p>
+
+          </div>
 
         </div>
       <Footer/>

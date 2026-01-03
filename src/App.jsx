@@ -21,10 +21,12 @@ import Realme from "./pages/Realme.jsx";
 import Xiaomi from "./pages/Xiaomi.jsx";
 import Tecno from "./pages/Tecno.jsx";
 import Checkout from "./pages/Checkout.jsx";
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <div className="app-container">
         <Routes>
           <Route path="/" element={<Home />} />

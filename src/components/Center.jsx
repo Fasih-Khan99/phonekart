@@ -31,7 +31,7 @@ function Center(){
       
     const styles = {
         centerimage: {
-          width: "100vw",
+          width: "100%",
           height: "100%",
           objectFit: "cover",
           opacity: fade ? 1 : 0, // Fade effect
