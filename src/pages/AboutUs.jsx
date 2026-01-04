@@ -2,7 +2,7 @@ import '../styles/AboutUs.css'   // Use two dots (..) if file is in another fold
 import Header from '../components/Header.jsx'    //importing Header component
 import Navbar from '../components/Navbar.jsx'    //importing Navbar component
 import Footer from '../components/Footer.jsx'    //importing Footer component
-import karan from '../assets/karan.png'
+import Karan from '../assets/Karan.png'
 import khurram from '../assets/khurram.jpg'
 import afk4 from '../assets/afk4.png'
 
@@ -18,7 +18,7 @@ function AboutUs() {
           <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CFO TECHNOVA PVT LTD</h2>
         </div>
         <div className='card2'>
-          <img src={karan} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="arif habib"></img> 
+          <img src={Karan} style={{width:"150px", height:"150px", margin:"10px", marginLeft:50}} alt="arif habib"></img> 
           <h1 style={{fontSize:18, color:"black", textAlign:"center"}}>MR. KARAN KABIR</h1>
           <h2 style={{fontSize:13, color:"black", textAlign:"center"}}>CEO TECHNOVA PVT LTD</h2>
         </div>
